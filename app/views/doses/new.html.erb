@@ -1,0 +1,9 @@
+<h1>Doses#new</h1>
+<p>Find me in app/views/doses/new.html.erb</p>
+
+
+<%= simple_form_for [@cocktail, @dose] do |d| %>
+  <%= d.label :description %>
+  <%= d.text_field :description %>
+  <%= d.submit :"validate", class: "btn btn-primary" %>
+<% end %>
